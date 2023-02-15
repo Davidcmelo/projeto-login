@@ -85,7 +85,7 @@ form label {
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translateY(-12px);
+    transform: translateY(-13px);
 }
 
 .campo > input:focus-within{
