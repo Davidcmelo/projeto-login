@@ -21,17 +21,17 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
+    
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.517);
-
+    
     transition: width .3s, height .3s;
     transition-timing-function :ease ;
+    transform: translate(-50%, -50%);
 }
 
 #login > #imagem{
@@ -58,15 +58,38 @@ main{
 
 form > div.campo{
     background-color:#0F06C2 ;
+    border: 2px solid #0F06C2 ;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 form label {
     display:none;
+}
+
+.campo > span{
+    color:white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color:#6890f5 ;
+    font-size: 1em;
+    width:calc(100% - 45px) ;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]{
@@ -105,3 +128,4 @@ form> a.botao:hover{
 form > a.botao > span{
     font-size: .8em
 }
+
